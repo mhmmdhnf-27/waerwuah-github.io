@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterWuah - Kesegaran Alami Setiap Saat!</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cyan': '#20C9D8',
+                        'brand-blue': '#5BC9E8',
+                        'brand-light-blue': '#DDF6FC',
+                        'brand-dark-blue': '#164A63',
+                        'brand-orange': '#F59E3D',
+                        'brand-green': '#79B95B',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(to right bottom, rgba(91, 201, 232, 0.9), rgba(32, 201, 216, 0.8)), url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=2059&auto=format&fit=crop')",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-brand-dark-blue bg-white antialiased">
+
+    <nav class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#home" class="text-3xl font-bold text-brand-cyan tracking-tight">
+                    Water<span class="text-brand-dark-blue">Wuah</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-brand-dark-blue hover:text-brand-cyan font-medium transition-colors">Home</a>
+                    <a href="#produk" class="text-brand-dark-blue hover:text-brand-cyan font-medium transition-colors">Produk</a>
+                    <a href="#galeri" class="text-brand-dark-blue hover:text-brand-cyan font-medium transition-colors">Galeri</a>
+                    <a href="#tentang" class="text-brand-dark-blue hover:text-brand-cyan font-medium transition-colors">Tentang Kami</a>
+                    <a href="#kontak" class="text-brand-dark-blue hover:text-brand-cyan font-medium transition-colors">Hubungi Kami</a>
+                    <a href="#kontak" class="bg-brand-orange hover:bg-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300">
+                        Pesan Sekarang
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brand-dark-blue focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-brand-light-blue shadow-lg absolute w-full">
+            <div class="px-4 py-4 space-y-3 flex flex-col">
+                <a href="#home" class="block text-brand-dark-blue hover:text-brand-cyan font-medium">Home</a>
+                <a href="#produk" class="block text-brand-dark-blue hover:text-brand-cyan font-medium">Produk</a>
+                <a href="#galeri" class="block text-brand-dark-blue hover:text-brand-cyan font-medium">Galeri</a>
+                <a href="#tentang" class="block text-brand-dark-blue hover:text-brand-cyan font-medium">Tentang Kami</a>
+                <a href="#kontak" class="block text-brand-dark-blue hover:text-brand-cyan font-medium">Hubungi Kami</a>
+                <a href="#kontak" class="text-center bg-brand-orange text-white font-semibold py-2 rounded-full mt-4">Pesan Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-hero-pattern bg-cover bg-center min-h-[90vh] flex items-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl text-white text-center md:text-left">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-brand-light-blue text-brand-dark-blue font-semibold text-sm mb-6">
+                    <i class="fas fa-leaf text-brand-green mr-2"></i>100% Air Pegunungan
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 text-white drop-shadow-md">
+                    WaterWuah:<br>
+                    Kesegaran Alami<br>
+                    <span class="text-brand-light-blue">Setiap Saat!</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-10 font-light max-w-2xl text-blue-50 drop-shadow-sm">
+                    Nikmati kemurnian air yang berasal dari sumber mata air alami terbaik. Memberikan kesegaran, kesehatan, dan keceriaan untuk Anda dan keluarga setiap hari.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#produk" class="bg-brand-orange hover:bg-orange-500 text-white text-center font-semibold py-4 px-8 rounded-full shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        Lihat Katalog Produk
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Bottom Curve -->
+        <div class="absolute bottom-0 w-full overflow-hidden leading-none z-10">
+            <svg class="relative block w-full h-12 md:h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.28,201.34,107.13,249.25,99.52,286.29,74.5,321.39,56.44Z" fill="#FFFFFF"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="produk" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark-blue mb-4">Produk & Harga</h2>
+                <div class="w-24 h-1.5 bg-brand-cyan mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Pilih kesegaran sesuai kebutuhanmu. Berbagai varian ukuran dan rasa menantimu.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-brand-light-blue rounded-3xl p-6 flex flex-col hover:shadow-xl transition-shadow duration-300 text-center">
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500&auto=format&fit=crop" alt="Original Fresh" class="w-full h-48 object-contain mix-blend-multiply mb-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-brand-dark-blue mb-1">Original Fresh</h3>
+                    <p class="text-brand-cyan font-semibold text-sm mb-3">330 ml</p>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Kesegaran murni yang praktis dibawa untuk aktivitas padatmu.</p>
+                    <p class="text-2xl font-bold text-brand-orange mb-4">Rp 3.500</p>
+                    <a href="#kontak" class="w-full bg-brand-cyan text-white hover:bg-cyan-600 font-semibold py-2 rounded-full transition-colors">Pesan</a>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-brand-light-blue rounded-3xl p-6 flex flex-col hover:shadow-xl transition-shadow duration-300 text-center relative">
+                    <span class="absolute top-4 right-4 bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full">New</span>
+                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&auto=format&fit=crop" alt="Lemon Twist" class="w-full h-48 object-contain mix-blend-multiply mb-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-brand-dark-blue mb-1">Lemon Twist</h3>
+                    <p class="text-brand-cyan font-semibold text-sm mb-3">600 ml</p>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Sensasi perasan lemon asli untuk membangkitkan energi hari ini.</p>
+                    <p class="text-2xl font-bold text-brand-orange mb-4">Rp 6.000</p>
+                    <a href="#kontak" class="w-full bg-brand-cyan text-white hover:bg-cyan-600 font-semibold py-2 rounded-full transition-colors">Pesan</a>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-brand-light-blue rounded-3xl p-6 flex flex-col hover:shadow-xl transition-shadow duration-300 text-center">
+                    <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?w=500&auto=format&fit=crop" alt="Berry Blast" class="w-full h-48 object-contain mix-blend-multiply mb-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-brand-dark-blue mb-1">Berry Blast</h3>
+                    <p class="text-brand-cyan font-semibold text-sm mb-3">250 ml</p>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Kombinasi berry manis dan segar, favorit anak-anak dan remaja.</p>
+                    <p class="text-2xl font-bold text-brand-orange mb-4">Rp 5.500</p>
+                    <a href="#kontak" class="w-full bg-brand-cyan text-white hover:bg-cyan-600 font-semibold py-2 rounded-full transition-colors">Pesan</a>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-brand-light-blue rounded-3xl p-6 flex flex-col hover:shadow-xl transition-shadow duration-300 text-center">
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500&auto=format&fit=crop" alt="Orange Splash" class="w-full h-48 object-contain mix-blend-multiply mb-6 hover:scale-105 transition-transform duration-300" style="filter: hue-rotate(330deg);">
+                    <h3 class="text-2xl font-bold text-brand-dark-blue mb-1">Orange Splash</h3>
+                    <p class="text-brand-cyan font-semibold text-sm mb-3">500 ml</p>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Kesegaran jeruk premium yang kaya vitamin C untuk daya tahan tubuh.</p>
+                    <p class="text-2xl font-bold text-brand-orange mb-4">Rp 7.000</p>
+                    <a href="#kontak" class="w-full bg-brand-cyan text-white hover:bg-cyan-600 font-semibold py-2 rounded-full transition-colors">Pesan</a>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-brand-light-blue rounded-3xl p-6 flex flex-col hover:shadow-xl transition-shadow duration-300 text-center">
+                    <img src="https://images.unsplash.com/photo-1548839140-29a749e1bc4e?w=500&auto=format&fit=crop" alt="Premium Pure" class="w-full h-48 object-contain mix-blend-multiply mb-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-brand-dark-blue mb-1">Premium Pure</h3>
+                    <p class="text-brand-cyan font-semibold text-sm mb-3">1 Liter</p>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Air murni ukuran besar, pas untuk persediaan di meja kerjamu.</p>
+                    <p class="text-2xl font-bold text-brand-orange mb-4">Rp 8.500</p>
+                    <a href="#kontak" class="w-full bg-brand-cyan text-white hover:bg-cyan-600 font-semibold py-2 rounded-full transition-colors">Pesan</a>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-brand-light-blue rounded-3xl p-6 flex flex-col hover:shadow-xl transition-shadow duration-300 text-center border-4 border-brand-cyan relative">
+                    <span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-cyan text-white text-sm font-bold px-4 py-1 rounded-full">Hemat Keluarga</span>
+                    <img src="https://images.unsplash.com/photo-1616551000620-6d0e6c1e31da?w=500&auto=format&fit=crop" alt="WaterWuah Family" class="w-full h-48 object-contain mix-blend-multiply mb-6 mt-2 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-brand-dark-blue mb-1">WaterWuah Family</h3>
+                    <p class="text-brand-cyan font-semibold text-sm mb-3">5 Liter</p>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Pilihan paling hemat untuk memenuhi kebutuhan minum harian keluarga.</p>
+                    <p class="text-2xl font-bold text-brand-orange mb-4">Rp 22.000</p>
+                    <a href="#kontak" class="w-full bg-brand-orange text-white hover:bg-orange-600 font-semibold py-2 rounded-full transition-colors">Pesan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark-blue mb-4">Galeri WaterWuah</h2>
+                <div class="w-24 h-1.5 bg-brand-cyan mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Momen kesegaran, keindahan alam, dan keceriaan bersama pelanggan setia kami.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+                <!-- Large Image -->
+                <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-md group relative">
+                    <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=1000&auto=format&fit=crop" alt="Keluarga bahagia" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-brand-dark-blue/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <span class="text-white font-medium">Keceriaan Keluarga</span>
+                    </div>
+                </div>
+                
+                <div class="rounded-2xl overflow-hidden shadow-md group relative">
+                    <img src="https://images.unsplash.com/photo-1559839914-11aaeebf0f04?q=80&w=600&auto=format&fit=crop" alt="Air terjun" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                
+                <div class="rounded-2xl overflow-hidden shadow-md group relative">
+                    <img src="https://images.unsplash.com/photo-1517559132176-67aeb6e09322?q=80&w=600&auto=format&fit=crop" alt="Infused water" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                
+                <div class="col-span-2 rounded-2xl overflow-hidden shadow-md group relative">
+                    <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=800&auto=format&fit=crop" alt="Olahraga" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-brand-dark-blue/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <span class="text-white font-medium">Teman Berolahraga</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <!-- Image column -->
+                <div class="w-full lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-brand-light-blue rounded-3xl -z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?q=80&w=1000&auto=format&fit=crop" alt="Alam Pegunungan" class="rounded-3xl shadow-xl w-full object-cover">
+                        <div class="absolute -bottom-8 -right-8 bg-white p-4 rounded-xl shadow-lg border-2 border-brand-light-blue hidden md:block">
+                            <div class="text-center">
+                                <i class="fas fa-medal text-brand-orange text-3xl mb-2"></i>
+                                <p class="font-bold text-brand-dark-blue">100% Kualitas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text column -->
+                <div class="w-full lg:w-1/2 text-brand-dark-blue">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Tentang Kami</h2>
+                    <div class="w-24 h-1.5 bg-brand-cyan rounded-full mb-8"></div>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        WaterWuah berawal dari mimpi sederhana: menghadirkan kesegaran air alam yang murni langsung ke tangan masyarakat. Diproses dengan teknologi modern namun tetap menjaga keaslian mineral alaminya.
+                    </p>
+
+                    <h3 class="text-2xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-eye text-brand-cyan mr-3"></i>Visi & Misi
+                    </h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Menjadi pelopor minuman sehat yang menyegarkan keluarga Indonesia, dengan misi menjaga kelestarian sumber mata air dan menyajikan produk berkualitas tinggi.
+                    </p>
+
+                    <h3 class="text-2xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-star text-brand-orange mr-3"></i>Nilai Unggulan Kami
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-brand-light-blue/50 p-4 rounded-xl flex items-start gap-3 border border-brand-light-blue">
+                            <i class="fas fa-tint text-brand-cyan text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Murni & Bersih</h4>
+                                <p class="text-sm text-gray-600">Diproses higienis.</p>
+                            </div>
+                        </div>
+                        <div class="bg-brand-light-blue/50 p-4 rounded-xl flex items-start gap-3 border border-brand-light-blue">
+                            <i class="fas fa-leaf text-brand-green text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Segar Alami</h4>
+                                <p class="text-sm text-gray-600">Tanpa bahan buatan.</p>
+                            </div>
+                        </div>
+                        <div class="bg-brand-light-blue/50 p-4 rounded-xl flex items-start gap-3 border border-brand-light-blue">
+                            <i class="fas fa-shield-alt text-brand-dark-blue text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Kualitas Tinggi</h4>
+                                <p class="text-sm text-gray-600">Standar mutu terbaik.</p>
+                            </div>
+                        </div>
+                        <div class="bg-brand-light-blue/50 p-4 rounded-xl flex items-start gap-3 border border-brand-light-blue">
+                            <i class="fas fa-users text-brand-orange text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Ramah Keluarga</h4>
+                                <p class="text-sm text-gray-600">Aman untuk semua umur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-20 bg-brand-light-blue">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+                
+                <!-- Contact Info Side -->
+                <div class="lg:w-2/5 bg-brand-dark-blue p-10 text-white flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-brand-cyan/20 blur-3xl"></div>
+                    <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 rounded-full bg-brand-blue/20 blur-2xl"></div>
+                    
+                    <div class="relative z-10">
+                        <h2 class="text-3xl font-bold mb-2">Hubungi Kami</h2>
+                        <p class="text-brand-light-blue mb-10">Pesan sekarang atau tanyakan detail produk kepada tim kami.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-brand-cyan transition-colors">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-300">Telepon / WhatsApp</p>
+                                    <p class="font-semibold text-lg">+62 815-2255-0103</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-brand-cyan transition-colors">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-300">Email</p>
+                                    <p class="font-semibold text-lg">hello@waterwuah.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-brand-cyan transition-colors">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-300">Lokasi</p>
+                                    <p class="font-semibold text-lg">Jl. Wonodadi No. 2, Pontianak</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 mt-12 flex gap-4">
+                        <a href="#" class="text-white hover:text-brand-cyan text-2xl transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-brand-cyan text-2xl transition-colors"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="text-white hover:text-brand-cyan text-2xl transition-colors"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="lg:w-3/5 p-10">
+                    <h3 class="text-2xl font-bold text-brand-dark-blue mb-6">Pesan Sekarang</h3>
+                    <form onsubmit="event.preventDefault(); alert('Pesanan berhasil dikirim ke WhatsApp!');" class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Lengkap</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:border-transparent bg-gray-50">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Pilih Produk</label>
+                                <select required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:border-transparent bg-gray-50">
+                                    <option value="">-- Pilih --</option>
+                                    <option>Original Fresh (330ml)</option>
+                                    <option>Lemon Twist (600ml)</option>
+                                    <option>Berry Blast (250ml)</option>
+                                    <option>Orange Splash (500ml)</option>
+                                    <option>Premium Pure (1L)</option>
+                                    <option>WaterWuah Family (5L)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Jumlah</label>
+                                <input type="number" min="1" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:border-transparent bg-gray-50" placeholder="Misal: 2">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Pesan Tambahan (Opsional)</label>
+                            <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:border-transparent bg-gray-50" placeholder="Alamat pengiriman / catatan khusus..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-orange hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg transition-colors flex justify-center items-center gap-2">
+                            <i class="fab fa-whatsapp text-xl"></i> Kirim Pesanan via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-cyan text-brand-dark-blue py-8 border-t border-brand-blue">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="font-bold text-2xl tracking-tight text-white">
+                Water<span class="text-brand-dark-blue">Wuah</span>
+            </div>
+            
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#home" class="hover:text-white transition-colors">Home</a>
+                <a href="#produk" class="hover:text-white transition-colors">Katalog</a>
+                <a href="#tentang" class="hover:text-white transition-colors">Tentang</a>
+            </div>
+
+            <div class="text-sm font-medium text-brand-dark-blue/80">
+                &copy; <span id="year"></span> WaterWuah. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update footer year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle logic
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
